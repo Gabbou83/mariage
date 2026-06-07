@@ -61,6 +61,13 @@
   .arrival{max-width:30rem; margin:16px auto 0; font-family:"Mulish",sans-serif; font-weight:500;
     font-size:.96rem; color:var(--forest-2); background:#e7eedb; border:1px solid var(--line);
     border-radius:12px; padding:11px 18px}
+  .venue{margin:-20px auto 40px; text-align:center}
+  .address{font-family:"Lora",serif; color:var(--forest-2); font-size:1.05rem}
+  .maplink{display:inline-flex; align-items:center; gap:7px; margin-top:12px; text-decoration:none;
+    font-family:"Mulish",sans-serif; font-weight:500; font-size:.92rem; color:var(--forest);
+    background:#e7eedb; border:1px solid var(--line); border-radius:999px; padding:8px 16px; transition:.2s}
+  .maplink:hover{background:#dde7cc; border-color:var(--moss)}
+  .deadline{margin:-22px auto 30px; font-family:"Caveat",cursive; font-size:1.4rem; color:var(--clay); text-align:center}
 
   section{padding:54px 0}
   /* la section programme porte .wrap (padding horizontal) : on lui rend un rythme vertical */
@@ -148,6 +155,13 @@
     <p class="tag" data-i18n="prog.tag">au programme</p>
     <h2 data-i18n="prog.title">Au chalet familial Boutin</h2>
     <p class="lead" data-i18n="prog.lead">Une grande journée champêtre, à la bonne franquette, sous les arbres.</p>
+    <div class="venue">
+      <p class="address">111 Rang Saint-Henri, Sainte-Sabine, QC&nbsp;G0R&nbsp;4H0</p>
+      <a class="maplink" href="https://www.google.com/maps/search/?api=1&amp;query=111%20Rang%20Saint-Henri%2C%20Sainte-Sabine%2C%20QC%20G0R%204H0" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-6.5-7-11a7 7 0 0 1 14 0c0 4.5-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <span data-i18n="maplink">Voir sur la carte</span>
+      </a>
+    </div>
   </div>
   <div class="grid">
     <div class="tile">
@@ -177,6 +191,7 @@
       <p class="tag" data-i18n="rsvp.tag">votre réponse</p>
       <h2 data-i18n="rsvp.title">Serez-vous des nôtres&nbsp;?</h2>
       <p class="lead" data-i18n="rsvp.lead">Inscrivez votre nom et celui des personnes qui vous accompagnent.</p>
+      <p class="deadline" data-i18n="deadline">Merci de répondre avant le 30 juin 2026.</p>
     </div>
 
     <form class="card" data-rsvp-form data-rsvp-card novalidate>
@@ -239,6 +254,7 @@
       "t4.title":"Tenue libre","t4.body":"Aucun code vestimentaire : venez comme vous êtes, confortables et prêts à profiter du plein air.",
       "rsvp.tag":"votre réponse","rsvp.title":"Serez-vous des nôtres ?",
       "rsvp.lead":"Inscrivez votre nom et celui des personnes qui vous accompagnent.",
+      "maplink":"Voir sur la carte","deadline":"Merci de répondre avant le 30 juin 2026.",
       "f.nom.label":"Votre nom","f.nom.ph":"Prénom et nom",
       "f.acc.label":"Qui vous accompagne ?","f.acc.hint":"— un nom par ligne","f.acc.ph":"Laissez vide si vous venez seul·e",
       "f.presence.legend":"Votre réponse",
@@ -262,6 +278,7 @@
       "t4.title":"No dress code","t4.body":"No dress code: come as you are, comfortable and ready to enjoy the outdoors.",
       "rsvp.tag":"your reply","rsvp.title":"Will you join us?",
       "rsvp.lead":"Add your name and the names of those joining you.",
+      "maplink":"View on map","deadline":"Please reply by June 30, 2026.",
       "f.nom.label":"Your name","f.nom.ph":"First and last name",
       "f.acc.label":"Who's coming with you?","f.acc.hint":"— one name per line","f.acc.ph":"Leave blank if you're coming alone",
       "f.presence.legend":"Your response",
@@ -285,6 +302,7 @@
       "t4.title":"Вільний дрес-код","t4.body":"Жодного дрес-коду: приходьте такими, як є — у зручному та готові до відпочинку на природі.",
       "rsvp.tag":"ваша відповідь","rsvp.title":"Чи будете з нами?",
       "rsvp.lead":"Впишіть своє ім'я та імена тих, хто буде з вами.",
+      "maplink":"Переглянути на карті","deadline":"Будь ласка, відповідайте до 30 червня 2026 року.",
       "f.nom.label":"Ваше ім'я","f.nom.ph":"Ім'я та прізвище",
       "f.acc.label":"Хто буде з вами?","f.acc.hint":"— по одному імені в рядку","f.acc.ph":"Залиште порожнім, якщо прийдете самі",
       "f.presence.legend":"Ваша відповідь",
